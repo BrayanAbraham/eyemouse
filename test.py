@@ -8,7 +8,7 @@ from pynput.mouse import Button, Controller
 
 mouse = Controller()
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 
 
@@ -162,7 +162,7 @@ while True:
                 # then increment the total number of blinks
                 if COUNTER_BLINK >= EYE_AR_CONSEC_FRAMES:
                     TOTAL_BLINK += 1
-                    sound.play()
+                    #sound.play()
                     mode_detect=not mode_detect
  
                 # reset the eye frame counter
@@ -309,7 +309,8 @@ while True:
                     EYEBALL_LEFT_COUNTER=0
                     EYEBALL_RIGHT_COUNTER=0
                     eye_pos_i=0
-                    mouse_mode_sound.play()
+                    #mouse_mode_sound.play()
+                    print("hi")
                     mode_detect=not mode_detect
                     
             else:
@@ -320,7 +321,7 @@ while True:
                     EYEBALL_LEFT_COUNTER=0
                     EYEBALL_RIGHT_COUNTER=0
                     eye_pos_i=2
-                    scroll_mode_sound.play()
+                    #scroll_mode_sound.play()
                     mode_detect=not mode_detect
      
 
@@ -328,7 +329,7 @@ while True:
 
 
 
-
+    
     cv2.imshow("face", frame)
     helper=cv2.getTrackbarPos('HELPER','face')
     if(helper==1 and mode_detect):
