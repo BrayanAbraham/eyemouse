@@ -1,0 +1,7 @@
+numpy
+dlib
+wheel
+scipy
+pyglet
+pynput
+opencv-python

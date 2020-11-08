@@ -52,9 +52,9 @@ cv2.createTrackbar('MODE_SELECTION_SENSITIVITY','face',20,50,nothing)
 cv2.createTrackbar('HELPER','face',1,1,nothing)
 
 #------SOUNDS------------
-sound = pyglet.media.load("sound.wav", streaming=False)
-mouse_mode_sound = pyglet.media.load("mouse_mode.wav", streaming=False)
-scroll_mode_sound = pyglet.media.load("scroll_mode.wav", streaming=False)
+sound = pyglet.media.load("./sounds/sound.wav", streaming=False)
+mouse_mode_sound = pyglet.media.load("./sounds/mouse_mode.wav", streaming=False)
+scroll_mode_sound = pyglet.media.load("./sounds/scroll_mode.wav", streaming=False)
 
 
 
