@@ -13,7 +13,7 @@ cap = cv2.VideoCapture(0)
 
 
 
-eye_pos_i=1;
+eye_pos_i=1
 eye_pos=["Mouse Mode","Nothing","Scroll Mode"]
 mode_detect=False
 text="Nothing"
